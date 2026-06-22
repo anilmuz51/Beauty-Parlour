@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Suhani Onboarding - Schedule Your Glow</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "inverse-primary": "#f5b9a5",
+                  "surface-bright": "#faf9f6",
+                  "surface-dim": "#dbdad7",
+                  "on-primary": "#ffffff",
+                  "secondary-fixed": "#ffd8ee",
+                  "error-container": "#ffdad6",
+                  "surface-container-low": "#f4f3f1",
+                  "on-surface-variant": "#514440",
+                  "on-surface": "#1a1c1a",
+                  "surface-container-highest": "#e3e2e0",
+                  "tertiary-fixed": "#f0e0c8",
+                  "on-secondary-fixed-variant": "#5d3d52",
+                  "primary-fixed-dim": "#f5b9a5",
+                  "primary-fixed": "#ffdbcf",
+                  "primary": "#815343",
+                  "on-tertiary-container": "#493f2e",
+                  "secondary-fixed-dim": "#e5bad4",
+                  "on-primary-fixed-variant": "#663c2d",
+                  "surface-container-lowest": "#ffffff",
+                  "primary-container": "#d9a08d",
+                  "secondary": "#76546a",
+                  "tertiary-fixed-dim": "#d3c5ad",
+                  "on-primary-container": "#5f3628",
+                  "secondary-container": "#ffd3ed",
+                  "error": "#ba1a1a",
+                  "on-tertiary": "#ffffff",
+                  "surface-tint": "#815343",
+                  "on-primary-fixed": "#321207",
+                  "on-error-container": "#93000a",
+                  "on-tertiary-fixed": "#221b0b",
+                  "surface-container": "#efeeeb",
+                  "on-secondary-fixed": "#2d1225",
+                  "on-secondary-container": "#7b586e",
+                  "outline-variant": "#d6c2bd",
+                  "background": "#faf9f6",
+                  "surface-container-high": "#e9e8e5",
+                  "surface": "#faf9f6",
+                  "tertiary": "#685d4a",
+                  "tertiary-container": "#b9ab94",
+                  "on-error": "#ffffff",
+                  "surface-variant": "#e3e2e0",
+                  "on-tertiary-fixed-variant": "#4f4533",
+                  "on-background": "#1a1c1a",
+                  "on-secondary": "#ffffff",
+                  "inverse-on-surface": "#f2f1ee",
+                  "outline": "#84746f",
+                  "inverse-surface": "#2f312f"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "margin-desktop": "64px",
+                  "gutter": "24px",
+                  "container-max": "1200px",
+                  "margin-mobile": "16px",
+                  "unit": "8px"
+          },
+          "fontFamily": {
+                  "headline-xl-mobile": ["Playfair Display"],
+                  "body-md": ["Montserrat"],
+                  "headline-lg": ["Playfair Display"],
+                  "headline-md": ["Playfair Display"],
+                  "headline-xl": ["Playfair Display"],
+                  "body-lg": ["Montserrat"],
+                  "label-md": ["Montserrat"],
+                  "label-sm": ["Montserrat"]
+          },
+          "fontSize": {
+                  "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                  "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                  "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                  "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                  "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                  "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                  "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                  "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .pamper-shadow {
+      box-shadow: 0 10px 40px -10px rgba(129, 83, 67, 0.15);
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+    @keyframes floating {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md overflow-x-hidden"><header class="w-full flex justify-center pt-10 pb-6 px-margin-mobile md:px-margin-desktop">
+<img alt="Suhani Beauty Parlour &amp; Training Center" class="h-16 md:h-20 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJEbsgoLsIIZGgFlL3UE9CSKKk8ydtnHYPfwZ6JELcviy3oX4uYqrI-axBoiag3UbtsXYN0r-lExDwiOtuFar2q70wPtyDYw2W2LzZqRPBA8sz2c2RikLttAetcfYMhxgMcrV39oqgg0EJyzoKI0gH38qTPL8RK5DjRs17lG9z0xpm9-AJuaKemwvxIPV2gpdDNZ7XesOufICb9NvYt1I3GrHUrI-IdwEMb7KWflyRt5v5qeoJ67GeJgFrLwgJpCFrPXj9fz9lYkIN"/>
+</header>
+<!-- Main Canvas -->
+<main class="flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop relative overflow-hidden pb-24">
+<!-- Background Decorative Elements -->
+<div class="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-container-max w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center py-8">
+<!-- Content Section (Left on Desktop) -->
+<div class="md:col-span-6 order-2 md:order-1 flex flex-col space-y-8 fade-in-up" style="animation-delay: 0.2s;">
+<div class="space-y-4">
+<span class="font-label-md text-label-md text-primary tracking-widest">STEP 02</span>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface leading-tight tracking-tight">
+            Schedule Your Glow
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed font-medium">
+            Pick your favorite hair, skin, or makeup services and lock in your appointment with your preferred expert in seconds.
+          </p>
+</div>
+<!-- Service Category Pills (Visual Hint) -->
+<div class="flex flex-wrap gap-3">
+<div class="bg-surface-container-high px-5 py-2 rounded-full font-label-sm text-label-sm text-primary border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">content_cut</span> HAIR
+          </div>
+<div class="bg-primary text-on-primary px-5 py-2 rounded-full font-label-sm text-label-sm flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-[18px]">face</span> SKINCARE
+          </div>
+<div class="bg-surface-container-high px-5 py-2 rounded-full font-label-sm text-label-sm text-primary border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">brush</span> MAKEUP
+          </div>
+</div>
+<!-- Navigation Actions -->
+<div class="pt-8 flex flex-col sm:flex-row gap-4 items-center">
+<button class="w-full sm:w-auto px-10 py-4 bg-primary text-on-primary font-label-md text-label-md rounded-xl hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary/20">
+            NEXT STEP
+          </button>
+<button class="w-full sm:w-auto px-10 py-4 bg-transparent text-primary font-label-md text-label-md rounded-xl hover:bg-primary/5 transition-colors border border-primary/20">
+            SKIP
+          </button>
+</div>
+<!-- Progress Indicator -->
+<div class="flex items-center gap-2 pt-4">
+<div class="h-1.5 w-6 bg-primary-container rounded-full opacity-40"></div>
+<div class="h-1.5 w-12 bg-primary rounded-full"></div>
+<div class="h-1.5 w-6 bg-primary-container rounded-full opacity-40"></div>
+</div>
+</div>
+<!-- Visual Section (Right on Desktop) -->
+<div class="md:col-span-6 order-1 md:order-2 flex justify-center items-center relative py-12 fade-in-up">
+<div class="relative w-full aspect-square max-w-[500px]">
+<!-- Main Image Card -->
+<div class="absolute inset-0 z-10 rounded-[2rem] overflow-hidden pamper-shadow border-[8px] border-surface-container-lowest transform rotate-2">
+<img alt="Luxury Salon Interior" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="A high-end editorial photograph of a luxury spa treatment room. Soft, warm morning sunlight streams through sheer linen curtains, illuminating a pristine white marble vanity topped with artisanal skincare glass bottles and fresh white lilies. The atmosphere is serene and minimalist, using a palette of soft ivory, muted rose gold, and deep plum accents. The visual style is calm, sophisticated, and evokes a premium self-care experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhgEoIl6RtoNG_NS15Qb6jfxxITOxwEU0RgBjZ1Wm9zXZmh630Kj5ii4Un3uLXWF-RETK3wk2eXMBdfX_Yf0iYN9YKykHXOIEXP8Bkz3lrtdr9DvVnMnIuKsiwcI4fTD01ZNpdztPd7-EiDV0XOKSVNT_A83qQHaLzExOEa_gw9lrXr47M5pn_TPv2i6Ar-Mny49cadDMu53S8zE5MnJGTeB1aH-Mnwd4t8abR0QfQDHRgrHZo_zDwVMcSh-XS7Sctdi5pEjnHw-cd"/>
+</div>
+<!-- Decorative Floating Card: Booking Confirmation UI -->
+<div class="absolute -bottom-6 -left-6 z-20 bg-surface-container-lowest p-6 rounded-2xl pamper-shadow flex items-center gap-4 border border-outline-variant/20 floating">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">calendar_today</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Confirmed</p>
+<p class="font-label-md text-label-md text-on-surface">Tomorrow, 10:00 AM</p>
+</div>
+</div>
+<!-- Decorative Floating Card: Expert Profile -->
+<div class="absolute -top-6 -right-6 z-20 bg-surface-container-lowest p-4 rounded-2xl pamper-shadow flex items-center gap-3 border border-outline-variant/20 floating" style="animation-delay: 1.5s;">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden">
+<img alt="Stylist Avatar" class="w-full h-full object-cover" data-alt="A professional close-up portrait of a friendly female hair stylist in a modern salon setting. She has a warm smile and is wearing a clean, professional dark linen apron. The background is softly blurred with hints of salon mirrors and warm lighting, maintaining a luxurious and approachable aesthetic consistent with a high-end beauty brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Q3eNym80Fg-2hh_EAXRfLnXfRoUwUM8Cp-a6hsO9tZQK0kaFW600MKUd7rNRMwG9EAhtpDFAOlNRbkX2-_BesKLCKx6BuIxfvAe5JCHFgot1g2SYRx-Ojsc4R3g4qAQMZtMlwmV3GmRYaYRj_EN0clZRgNrxdfY3LHHXWUdH654ATcKs2M9ZULSEGrdxs3gmDkcCY0ddnjTNZellSW4yUUn0VMKZgoGdFiZlOffng8Kt6I_iItaM1VPErh8lGp3GOqnHKY2sRd5a"/>
+</div>
+<div>
+<p class="font-label-sm text-[10px] text-primary">Master Stylist</p>
+<p class="font-label-md text-label-sm text-on-surface">Elena S.</p>
+</div>
+</div>
+<!-- Behind Background Shape -->
+<div class="absolute inset-4 bg-tertiary-container/30 rounded-[2rem] -rotate-3 -z-10"></div>
+</div>
+</div>
+</div>
+</main>
+<script>
+    // Subtle interactive entrance effects
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector('button');
+      button.addEventListener('mouseenter', () => {
+        // Simple scale effect handled by tailwind, but could add JS spark here
+      });
+    });
+  </script>
+</body></html>
